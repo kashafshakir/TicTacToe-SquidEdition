@@ -1,13 +1,13 @@
-# TicTacToe-SquidEdition
+# RockPaperScissor
 
-🎮 SquidTicTacToe
-🦑 A Squid Game-Themed Tic Tac Toe (HTML, CSS & JS)
+🎮 SquidRockPaperScissor
+🦑 A Squid Game-Themed Rock Paper Scissor (HTML, CSS & JS)
 
 📌 Project Overview
-This is a Tic Tac Toe game with a Squid Game theme, built using HTML, CSS, and JavaScript. The game follows the traditional Tic Tac Toe rules while featuring a custom UI inspired by the Netflix series Squid Game.
+This is a Rock Paper Scissor game with a Squid Game theme, built using HTML, CSS, and JavaScript. The game follows the traditional Rock Paper Scissor rules while featuring a custom UI inspired by the Netflix series Squid Game.
 
 🎨 Features
-✔️ Classic Tic Tac Toe Gameplay – Play against computer!
+✔️ Classic Rock Paper Scissor Gameplay – Play against computer!
 ✔️ Squid Game Theme – UI inspired by the series.
 ✔️ Responsive Design – Works on mobile & desktop.
 ✔️ JavaScript Game Logic – No backend required!
