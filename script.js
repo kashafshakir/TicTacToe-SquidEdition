@@ -14,7 +14,7 @@ let user_win = true;
 let user_score = 0;
 let AI_score = 0;
 const userscore = document.querySelector("#userscore");
-const AIscore = document.querySelector("#AIscore"); // Fixed selector issue
+const AIscore = document.querySelector("#AIscore"); 
 
 const gencompchoice = () => {
     let options = ["rock", "paper", "scissors"];
@@ -68,12 +68,12 @@ const play_game = (user_choice) => {
         }
     }
 
-    if (user_win) { // Fixed condition check
+    if (user_win) { 
         user_score += 1;
-        userscore.innerText = `${user_score}`; // Fixed template literal syntax
-    } else { // Fixed misplaced condition
+        userscore.innerText = `${user_score}`; 
+    } else {
         AI_score += 1;
-        AIscore.innerText = `${AI_score}`; // Fixed template literal syntax
+        AIscore.innerText = `${AI_score}`; 
     }
 };
 
