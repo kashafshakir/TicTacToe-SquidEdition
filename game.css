@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 1s ease-in-out; /* Your transition */
+    transition: transform 1s ease-in-out; 
 }
 
 body {
@@ -54,7 +54,7 @@ button:hover {
 
 /* Animation Class */
 .swipe-up {
-    transform: translateY(-100%); /* Your swipe-up animation */
+    transform: translateY(-100%); 
 }
 
 /* Game Screen */
@@ -63,18 +63,18 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Use min-height to allow content to grow */
+    min-height: 100vh; 
     background-color: black;
-    padding: 20px; /* Add padding to avoid content touching edges */
-    gap: 20px; /* Add gap between elements */
+    padding: 20px; 
+    gap: 20px; 
 }
 
-/* Center the heading */
+/*  heading */
 h1 {
     font-size: 40px;
     color: white;
     text-align: center;
-    margin-top: 0; /* Remove top margin */
+    margin-top: 0; 
 }
 
 /* Symbols Container */
@@ -111,7 +111,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Added to position the border */
+    position: relative; 
     margin-top: 200px;
 }
 .symbol::before {
@@ -157,7 +157,7 @@ h1 {
     align-items: center;
     gap: 50px; /* Space between scores */
     color: white;
-    margin-bottom: 10px; /* Reduced margin to move it up */
+    margin-bottom: 10px; 
 }
 
 .score {
@@ -176,7 +176,7 @@ h1 {
 /* Message Container */
 .msgcontainer {
     text-align: center;
-    margin-top: 20px; /* Add margin to separate from scoreboard */
+    margin-top: 20px; 
 }
 
 #msg {
