@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element dimensions */
+}
+
+/* Hero Section (Background Image) */
+#hero_section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(hero_Section.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out; /* Your transition */
+}
+
+body {
+    background-color: black;
+}
+
+/* Title Styling */
+#title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'bank gothic';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Play Button */
+button {
+    background-color: #db162f;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+/* Animation Class */
+.swipe-up {
+    transform: translateY(-100%); /* Your swipe-up animation */
+}
+
+/* Game Screen */
+#game-screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to allow content to grow */
+    background-color: black;
+    padding: 20px; /* Add padding to avoid content touching edges */
+    gap: 20px; /* Add gap between elements */
+}
+
+/* Center the heading */
+h1 {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Symbols Container */
+.symbols-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between symbols */
+}
+@keyframes rotate-border {
+    0% {
+        border-top-color: black;
+        border-right-color: red;
+        border-bottom-color: red;
+        border-left-color: black;
+        transform: rotate(0deg);
+    }
+    100% {
+        border-top-color: black;
+        border-right-color: red;
+        border-bottom-color: red;
+        border-left-color: black;
+        transform: rotate(360deg);
+    }
+}
+/* Individual Symbols */
+.symbol {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: pink;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added to position the border */
+    margin-top: 200px;
+}
+.symbol::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    animation: rotate-border 2s linear infinite;
+}
+
+
+.symbol:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  
+}
+
+#rock {
+    background-image: url(Screenshot\ 2025-03-19\ 012021.png);
+    background-size: contain;
+    background-color: green;
+}
+
+#paper {
+    background-image: url(Screenshot\ 2025-03-19\ 012048.png);
+    background-size: contain;
+    background-color: #db162f;
+}
+
+#scissors {
+    background-image: url(Screenshot\ 2025-03-19\ 012100.png);
+    background-size: contain;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Space between scores */
+    color: white;
+    margin-bottom: 10px; /* Reduced margin to move it up */
+}
+
+.score {
+    text-align: center;
+}
+
+#userscore, #AIscore {
+    font-size: 24px;
+    color: white;
+    background-color: #db162f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: -150px;
+}
+
+/* Message Container */
+.msgcontainer {
+    text-align: center;
+    margin-top: 20px; /* Add margin to separate from scoreboard */
+}
+
+#msg {
+    font-size: 20px;
+    color: white;
+    margin-top:-70px;
+}
